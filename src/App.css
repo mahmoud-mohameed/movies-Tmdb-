@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: #0F0F0F;
+}
+ul{
+  list-style: none;
+}
+a,NavLink,Link{
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (max-width: 1199px) and (min-width: 992px) { 
+  .container{
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) { 
+  .container{
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+}
+@media (max-width: 767px) { 
+  .container{
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+}
+@media (max-width: 545px) { 
+  .container{
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+}
+@media (max-width: 355px) { 
+  .container{
+      padding-left: 5px;
+      padding-right: 5px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar {
+  width: .7rem;
+  background-color: hsl(0, 0%, 10%); /* أسود فاتح */
 }
-
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar-thumb {
+  background-color: hsl(0, 0%, 35%); /* رمادي متوسط */
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(0, 0%, 50%); /* رمادي أفتح */
 }
